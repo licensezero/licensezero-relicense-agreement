@@ -1,8 +1,0 @@
-- [ ] Sign the agreement.
-- [ ] Receive countersigned agreement.
-- [ ] Request tax forms (e.g. IRS W-9).
-- [ ] Send e-mail appointing technical representative.
-- [ ] Countersign the first project statement.
-- [ ] Send e-mail about billing process.
-- [ ] Send e-mail with open source guidelines.
-- [ ] Send e-mail with any security requirements.
