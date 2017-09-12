@@ -6,7 +6,7 @@
 
         \\  The ""Project"" is the computer software project under the name "[Project Name]", developed partially or entirely by <Developer>.
 
-        \\  The ""Source Code"" is the branch of Git commits ending with the current master-branch commit with hash [Commit Hash], and their contents.
+        \\  The ""Source Code"" is the branch of Git commits ending with the commit with hash [Commit Hash], and the contents of those commits.
 
         \\  The ""Designated Public License"" is the terms of the <Open Source License> standardized by Software Package Data eXchange (SPDX) with the identifier "[License Identifier]".
 
@@ -22,19 +22,23 @@
 
         \\  publish the <Source Code> to the <Designated Repository> and maintain it there, while it is possible to do so free of charge, for 12 calendar months
 
-        \\  give <Notice> of the URL where the <Source Code> is published to the <Designated Repository>
-
         \\  update notice files, header comments, and package metadata to reflect the license terms that apply to the <Project>
 
-    \Purpose\  The purpose of <Developer>'s obligations in {Open Source Release} is to make the <Project> available like typical Open Source of a similar kind, to <Sponsor> specifically and to the public generally.
+        \\  give <Notice> of the URL where the <Source Code> is published to the <Designated Repository>
 
-    \No Services\  Apart from under {Open Source Release}, <Developer> does not agree to provide any services, related to the <Project> otherwise.
+    \Purpose of Obligations\  The purpose of <Developer>'s obligations in {Open Source Release} is to make the <Project> available like typical Open Source of a similar kind, to <Sponsor> specifically and to the public generally.
 
-    \Payment\  <Sponsor> agrees to pay <Developer> the <Accession Price>, using the <Payment Method>, as soon as practical after entering into this agreement.  <Developer> and <Sponsor> agrees to pay their own costs of using the <Payment Method>.
+    \No Services\  Apart from under {Open Source Release}, <Developer> does not agree to provide any services, related to the <Project> or otherwise.
+
+    \License\  On receipt of payment, <Developer> licenses <Developer> licenses <Intellectual Property Rights> in the <Project> to <Sponsor>.  The terms of the license are those of the <Designated Public License>, interpreted as an entirely independent legal document, without reference to these terms.
+
+    \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <Designated Public License> immediately on payment, even if <Developer> fails to meet its obligations under {Open Source Release}.
+
+    \Payment\  <Sponsor> agrees to pay <Developer> the <Accession Price>, using the <Payment Method>, as soon as practical after entering into this agreement.  <Developer> and <Sponsor> agree to pay their own costs of using the <Payment Method>.
 
     \Guarantees\  <Developer> states, for the benefit of <Sponsor>, that:
 
-        \\  All aspects of the <Project> that are not already publicly licensed under the terms of an <Open Source License> are <Developer>'s own, original work.
+        \\  All contributions to <Project> that are not already publicly licensed under the terms of an <Open Source License> are <Developer>'s own, original work.
 
         \\  <Developer> has all the legal rights necessary to license <Developer>'s contributions to the <Project> under the <Designated Public License>.
 
@@ -42,13 +46,7 @@
 
         \\  As far as <Developer> knows, none of the <Intellectual Property Rights> in the <Project> have been involved in any <Legal Action>.
 
-    \Developer Guarantees\  <Developer> guarantees all of these statements are true about the <Project> on entering this agreement:
-
-        \\  <Developer> has all legal rights needed to license aspects of the <Project> that are not already published under the terms of an <Open Source License> under the <Designated Public License>.
-
-        \\  As far as <Developer> is aware, no <Intellectual Property Rights> in the <Project> have been involved in any <Legal Action>.
-
-    \Disclaimer!!  <Developer> makes only the guarantees in {Developer Guarantees} about the <Project>.  With the single exception of those guarantees, the only terms between <Developer> and <Sponsor> about the <Project> will be those of the <Designated Public License>.
+    \Disclaimer!!  <Developer> makes only the guarantees in {Guarantees} about the <Project>.  With the exception of those guarantees, the only terms between <Developer> and <Sponsor> about the <Project> will be those of the <Designated Public License>.
 
     \Limited Damages!!  If <Sponsor> takes <Legal Action> against <Developer> related to the this agreement, under contract law, tort law, or any other kind of law, <Sponsor>'s damages from <Developer> will be capped at the amount of the <Accession Price> that <Sponsor> has paid <Developer>.
 
