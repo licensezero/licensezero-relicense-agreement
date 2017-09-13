@@ -16,6 +16,8 @@
 
         \\  The ""Payment Method"" is [Payment Method].
 
+    \Payment\  <Sponsor> agrees to pay <Developer> the <Accession Price>, using the <Payment Method>, as soon as practical after entering into this agreement.  <Developer> and <Sponsor> agree to pay their own costs of using the <Payment Method>.
+
     \Open Source Release\  As soon as practical after receipt of payment, <Developer> agrees to:
 
         \\  relicense the <Project> to the public on the terms of the <Designated Public License>
@@ -33,8 +35,6 @@
     \License\  On receipt of payment, <Developer> licenses <Developer> licenses <Intellectual Property Rights> in the <Project> to <Sponsor>.  The terms of the license are those of the <Designated Public License>, interpreted as an entirely independent legal document, without reference to these terms.
 
     \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <Designated Public License> immediately on payment, even if <Developer> fails to meet its obligations under {Open Source Release}.
-
-    \Payment\  <Sponsor> agrees to pay <Developer> the <Accession Price>, using the <Payment Method>, as soon as practical after entering into this agreement.  <Developer> and <Sponsor> agree to pay their own costs of using the <Payment Method>.
 
     \Guarantees\  <Developer> states, for the benefit of <Sponsor>, that:
 
