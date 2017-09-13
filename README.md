@@ -2,6 +2,8 @@
 
 an open form contract for paid conversion of private software to open source
 
+Developer has proprietary code, say a [License Zero](https://licensezero.com) project.  Sponsor pays developer.  Developer relicenses under a pre-agreed Open Source license and publishes.
+
 Download the most recent release from [GitHub](https://github.com/licensezero/accession-agreement/releases) or [commonform.org](https://commonform.org/publishers/licensezero/accession-agreement).
 
 ## Be Warned!
