@@ -19,7 +19,8 @@
     ],
     "information": [
       "date",
-      "email"
+      "email",
+      "headquarters"
     ]
   }
 ]
