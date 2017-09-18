@@ -27,17 +27,17 @@ $(OUTPUT):
 $(OUTPUT)/%.md: %.form %.options blanks.json | $(CF) $(OUTPUT)
 	$(CF) render --format markdown $(shell cat $*.options) --blanks blanks.json < $< > $@
 
-$(OUTPUT)/%.docx: %.form %.options %.json blanks.json | $(CF) $(OUTPUT)
-	$(CF) render --format docx $(shell cat $*.options) --edition "$(SPELLED_EDITION)" --signatures $*.json --blanks blanks.json < $< > $@
+$(OUTPUT)/%.docx: %.form %.options blanks.json | $(CF) $(OUTPUT)
+	$(CF) render --format docx $(shell cat $*.options) --edition "$(SPELLED_EDITION)" --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.json: %.form | $(CF) $(OUTPUT)
 	$(CF) render --format native < $< > $@
 
 %.form: %.cform
 ifeq ($(EDITION),Development Draft)
-	cat $< | sed "s!PUBLICATION!a development draft of the License Zero Open Accession Agreement!" > $@
+	cat $< | sed "s!PUBLICATION!a development draft of the License Zero Relicense Agreement!" > $@
 else
-	cat $< | sed "s!PUBLICATION!the $(SPELLED_EDITION) of the License Zero Open Accession Agreement!" > $@
+	cat $< | sed "s!PUBLICATION!the $(SPELLED_EDITION) of the License Zero Relicense Agreement!" > $@
 endif
 
 %.pdf: %.docx

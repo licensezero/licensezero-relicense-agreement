@@ -1,54 +1,56 @@
-""Sponsor"" and ""Developer"" agree:
+<Sponsor> and <Developer> agree:
 
-    \Published Form\  This is PUBLICATION.  See https://github.com/licensezero/open-accession-agreement for license terms and other information.
+    \Published Form\  This is PUBLICATION.  See https://github.com/licensezero/licensezero-relicense-agreement for license terms and other information.
 
     \Deal Terms\
 
-        \\  The ""Project"" is the computer software project under the name "[Project Name]", developed partially or entirely by <Developer>.
+        \\  ""Developer"" is [Developer Name], based in [Developer Jurisdiction] (ISO 3166-2).
 
-        \\  The ""Source Code"" is the branch of Git commits ending with the commit with hash [Commit Hash], and the contents of those commits.
+        \\  ""Sponsor"" is [Sponsor Name], based in [Sponsor Jurisdiction] (ISO 3166-2).
 
-        \\  The ""Designated Public License"" is the terms of the <Open Source License> standardized by Software Package Data eXchange (SPDX) with the identifier "[License Identifier]".
+        \\  The ""Project"" is the computer software project, developed partially or entirely by <Developer>.
 
-        \\  The ""Designated Repository"" is [Repository].
+        \\  The ""Repository"" at [Repository] serves Git revision control data containing the development files of the <Project>.
 
-        \\  The ""Accession Price"" is [Accession Price] United States Dollars.
+        \\  The ""Source Code"" is the branch of Git commits in the <Repository> ending with the current commit on the "master" branch, or another, default branch if there is no master branch, and the contents of those commits.
 
-        \\  The ""Payment Method"" is [Payment Method].
+        \\  The ""New Open Source License"" is the terms of the public license approved by the Open Source Initiative and standardized by Software Package Data eXchange with the identifier "[License Identifier]".
 
-    \Payment\  <Sponsor> agrees to pay <Developer> the <Accession Price>, using the <Payment Method>, as soon as practical after entering into this agreement.  <Developer> and <Sponsor> agree to pay their own costs of using the <Payment Method>.
+        \\  The ""Relicense Price"" is [Relicense Price] United States Dollars.
 
-    \Open Source Release\  As soon as practical after receipt of payment, <Developer> agrees to:
+        \\  ""Intellectual Property Rights"" means copyrights, patent rights, database rights, and rights in registrations and applications for <Intellectual Property Rights>.
 
-        \\  relicense the <Project> to the public on the terms of the <Designated Public License>
+        \\  ""Legal Action"" means any legal action or claim, ignoring the historical distinction between actions "in law" and "in equity".
+
+    \Open Source Release\  As soon as practical after receipt of the <Relicense Price> via [Payment Method], <Developer> agrees to:
+
+        \\  relicense the <Project> to the public on the terms of the <New Open Source License>
 
         \\  update notice files, header comments, and package metadata to reflect the license terms that apply to the <Project>
 
-        \\  publish the <Source Code> to the <Designated Repository> and maintain it there, while it is possible to do so free of charge, for 12 calendar months
+        \\  publish those updates to the <Source Code> to the <Repository>
 
-        \\  give <Notice> of the URL where the <Source Code> is published to the <Designated Repository>
+        \\  maintain the updated <Source Code> for free-of-charge public access at the <Repository>, while it is possible to do so free of charge, for [Publication Period]
 
-    \Purpose of Obligations\  The purpose of <Developer>'s obligations in {Open Source Release} is to make the <Project> available like typical Open Source of a similar kind, to <Sponsor> specifically and to the public generally.
+    \Purpose of Obligations\  The purpose of <Developer>'s obligations in {Open Source Release} is to make the <Project> available as Open Source software, to <Sponsor> specifically and to the public generally.
 
     \No Services\  Apart from under {Open Source Release}, <Developer> does not agree to provide any services, related to the <Project> or otherwise.
 
-    \License\  On receipt of payment, <Developer> licenses <Developer> licenses <Intellectual Property Rights> in the <Project> to <Sponsor>.  The terms of the license are those of the <Designated Public License>, interpreted as an entirely independent legal document, without reference to these terms.
+    \License\  On receipt of payment, <Developer> licenses <Developer> licenses <Intellectual Property Rights> in the <Project> to <Sponsor>.  The terms of the license are those of the <New Open Source License>, interpreted as an entirely independent legal document, without reference to these terms.
 
-    \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <Designated Public License> immediately on payment, even if <Developer> fails to meet its obligations under {Open Source Release}.
+    \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <New Open Source License> immediately on payment, even if <Developer> fails to meet its obligations under {Open Source Release}.
 
     \Guarantees\  <Developer> states, for the benefit of <Sponsor>, that:
 
-        \\  All contributions to the <Project> that are not already publicly licensed under the terms of an <Open Source License> are <Developer>'s own, original work.
-
-        \\  <Developer> has all the legal rights necessary to license <Developer>'s contributions to the <Project> under the <Designated Public License>.
+        \\  <Developer> has all the legal rights necessary to license <Developer>'s contributions to the <Project> under the <New Open Source License>.
 
         \\  No one else has claimed any <Intellectual Property Rights>, liens, or other legal rights in <Developer>'s contributions to the <Project>.
 
         \\  As far as <Developer> knows, none of the <Intellectual Property Rights> in the <Project> have been involved in any <Legal Action>.
 
-    \Disclaimer!!  <Developer> makes only the guarantees in {Guarantees} about the <Project>.  With the exception of those guarantees, the only terms between <Developer> and <Sponsor> about the <Project> will be those of the <Designated Public License>.
+    \Disclaimer!!  <Developer> makes only the guarantees in {Guarantees} about the <Project>.  With the exception of those guarantees, the only terms between <Developer> and <Sponsor> about rights to the <Project> will be those of the <New Open Source License>.
 
-    \Limited Damages!!  If <Sponsor> takes <Legal Action> against <Developer> related to the this agreement, under contract law, tort law, or any other kind of law, <Sponsor>'s damages from <Developer> will be capped at the amount of the <Accession Price> that <Sponsor> has paid <Developer>.
+    \Limited Damages!!  If <Sponsor> takes <Legal Action> against <Developer> related to the this agreement, under contract law, tort law, or any other kind of law, <Sponsor>'s damages from <Developer> will be capped at the amount of the <Relicense Price> that <Sponsor> paid <Developer>.
 
     \General Contract Terms\
 
@@ -58,20 +60,10 @@
 
         \Whole Agreement\  This agreement lists all the terms that <Sponsor> and <Developer> intend to apply to relicensing of the <Project>.
 
-        \Assignment\  Neither <Sponsor> nor <Developer> can assign any right under this agreement without <Notice> of the other's permission.  Any attempt to assign has no legal effect.
+        \Assignment\  Neither <Sponsor> nor <Developer> can assign any right under this agreement without the other's written permission.  Any attempt to assign has no legal effect.
 
         \Delegation\  Neither <Sponsor> nor <Developer> can delegate any duty under this agreement.  Any attempt to delegate has no legal effect.
 
-        \Unenforceable Terms\  If a court decides that any part of this agreement cannot be enforced, for any reason, the rest of this agreement will continue to apply, so long as that wouldn't defeat the purpose of relicensing the <Project> for the <Accession Price>.
+        \Unenforceable Terms\  If a court decides that any part of this agreement cannot be enforced, for any reason, the rest of this agreement will continue to apply, so long as that wouldn't defeat the purpose of relicensing the <Project> for the <Relicense Price>.
 
-        \Signatures\  <Sponsor> and <Developer> can sign this agreement however they like, so long as it creates a written record, accessible to both parties, that shows they agreed.
-
-    \Definitions\
-
-        \\  ""Intellectual Property Rights"" means copyrights, patent rights, database rights, and rights in registrations and applications for <Intellectual Property Rights>.
-
-        \\  ""Legal Action"" means any legal action or claim, ignoring the historical distinction between actions "in law" and "in equity".
-
-        \\  ""Notice"" means an email from one party to the other, delivered to the address provided with their signature, or to another address they specify by <Notice> after signing.
-
-        \\  ""Open Source License"" means a form public license approved by the Open Source Initiative as an Open Source license.
+        \Agreement\  <Developer> indicates its agreement to these terms by the cryptographic signature of its agent.  <Sponsor> indicates its agreement to these terms by initiation of the transaction via the agent and payment of the <Relicense Price>.

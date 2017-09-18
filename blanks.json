@@ -1,6 +1,11 @@
 {
-  "Project Name": null,
-  "Commit Hash": null,
-  "License Identifier": null,
-  "Repository": null
+  "Developer Name": null,
+  "Developer Jurisdiction": null,
+  "Sponsor Name": null,
+  "Sponsor Jurisdiction": null,
+  "Repository": null,
+  "License Identifier": "BSD-2-Clause",
+  "Relicense Price": null,
+  "Payment Method": "licensezero.com",
+  "Publication Period": "12 calendar months"
 }
