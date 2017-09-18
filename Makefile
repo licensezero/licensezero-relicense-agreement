@@ -58,7 +58,7 @@ clean:
 	rm -rf $(OUTPUT)
 
 docker:
-	docker build -t open-accession-agreement .
-	docker run --name open-accession-agreement open-accession-agreement
-	docker cp open-accession-agreement:/workdir/$(OUTPUT) .
-	docker rm open-accession-agreement
+	docker build -t licensezero-relicense-agreement .
+	docker run --name licensezero-relicense-agreement licensezero-relicense-agreement
+	docker cp licensezero-relicense-agreement:/workdir/$(OUTPUT) .
+	docker rm licensezero-relicense-agreement
