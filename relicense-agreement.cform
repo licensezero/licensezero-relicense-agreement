@@ -20,6 +20,7 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
         \\  ""Legal Action"" means any legal action or claim, ignoring the historical distinction between actions "in law" and "in equity".
 
+    # NOTE: automatic e-mails to licensors reference this heading by name
     \Open Source Release\  As soon as practical after receipt of the <Relicense Price> via [Payment Method], <Developer> agrees to:
 
         \\  relicense the <Project> to the public on the terms of the <New Open Source License>
