@@ -8,9 +8,9 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
         \\  The ""Project"" is the computer software project, developed partially or entirely by <Developer>, for which <Developer> offers private licenses through [Agent Website] under the project ID [Project ID].
 
-        \\  The ""Repository"" at [Repository] serves Git revision control data containing the development files of the <Project>.
+        \\  The ""Repository"" at [Repository] serves revision control data containing the development files of the <Project>.
 
-        \\  The ""Source Code"" is the branch of Git commits in the <Repository> ending with the current commit on the "master" branch, or another, default branch if there is no master branch, and the contents of those commits.
+        \\  The ""Source Code"" is the branch of code commits in the <Repository> ending with the current commit on the "master" branch, or another, default branch if there is no master branch, and the contents of those commits.
 
         \\  The ""New Open Source License"" is the terms of the public license approved by the Open Source Initiative and standardized by Software Package Data eXchange with the identifier "[License Identifier]".
 
