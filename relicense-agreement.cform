@@ -65,4 +65,4 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
         \Delegation\  Neither <Sponsor> nor <Developer> can delegate any duty under this agreement.  Any attempt to delegate has no legal effect.
 
-        \Agreement\  <Developer> indicates its agreement to these terms by the cryptographic signature of its agent.  <Sponsor> indicates its agreement to these terms by initiation of the transaction via the agent and making of the <Payment>.
+        \Agreement\  <Developer> indicates its agreement to these terms by the cryptographic signature of its agent.  <Sponsor> indicates its agreement to these terms by initiation of the transaction via the agent, and making the <Payment>.
