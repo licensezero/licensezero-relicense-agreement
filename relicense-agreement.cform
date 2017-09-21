@@ -25,6 +25,8 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
         \\  relicense the <Project> to the public on the terms of the <New Open Source License>
 
+        \\  retract the <Project> from sale via [Agent Website].
+
         \\  update notice files, header comments, and package metadata to reflect the license terms that apply to the <Project>
 
         \\  publish those updates to the <Source Code> to the <Repository>
