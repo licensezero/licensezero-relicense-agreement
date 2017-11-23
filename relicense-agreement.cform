@@ -12,7 +12,7 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
         \\  The ""Source Code"" is the branch of code commits in the <Repository> ending with the current commit on the master branch, and the contents of those commits.
 
-        \\  The ""New Open Source License"" is the version of the License Zero Permissive Public License currently published at [Open Source License Website].
+        \\  The ""New Permissive License"" is the version of the License Zero Permissive Public License currently published at [Open Source License Website].
 
         \\  The ""Payment"" is [Payment] United States Dollars.
 
@@ -23,7 +23,7 @@ Effective [Date], <Sponsor> and <Developer> agree:
     # NOTE: automatic e-mails to licensors reference this heading by name
     \Open Source Release\  As soon as practical after receipt of the <Payment> via [Payment Method], <Developer> agrees to:
 
-        \\  relicense the <Project> to the public on the terms of the <New Open Source License>
+        \\  relicense the <Project> to the public on the terms of the <New Permissive License>
 
         \\  retract the <Project> from sale via [Agent Website].
 
@@ -37,19 +37,19 @@ Effective [Date], <Sponsor> and <Developer> agree:
 
     \No Services\  Apart from under {Open Source Release}, <Developer> does not agree to provide any services, related to the <Project> or otherwise.  <Developer> may or may not make additional contributions to the <Project> in the future.
 
-    \License\  On receipt of payment, <Developer> licenses <Intellectual Property Rights> in the <Project>, as well as any future contributions to the <Project> published with the same project ID, to <Sponsor> and the public.  The terms of the license are those of the <New Open Source License>, interpreted as an entirely independent legal document, without reference to these terms.
+    \License\  On receipt of payment, <Developer> licenses <Intellectual Property Rights> in the <Project>, as well as any future contributions to the <Project> published with the same project ID, to <Sponsor> and the public.  The terms of the license are those of the <New Permissive License>, interpreted as an entirely independent legal document, without reference to these terms.
 
-    \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <New Open Source License> immediately on payment, even if <Developer> fails to meet their obligations under {Open Source Release}.
+    \Purpose of License\  The purpose of <Developer>'s license in {License} is to give <Sponsor> the benefit of the <New Permissive License> immediately on payment, even if <Developer> fails to meet their obligations under {Open Source Release}.
 
     \Guarantees\  <Developer> states that:
 
-        \\  <Developer> has all the legal rights necessary to license <Developer>'s contributions to the <Project> under the <New Open Source License>.
+        \\  <Developer> has all the legal rights necessary to license <Developer>'s contributions to the <Project> under the <New Permissive License>.
 
         \\  No one else has claimed any <Intellectual Property Rights>, liens, or other legal rights in <Developer>'s contributions to the <Project>.
 
         \\  As far as <Developer> knows, none of the <Intellectual Property Rights> in the <Project> have been involved in any <Legal Action>.
 
-    \Disclaimer!!  <Developer> makes only the guarantees in {Guarantees} about the <Project>.  With the exception of those guarantees, the only terms between <Developer> and <Sponsor> about rights to the <Project> will be those of the <New Open Source License>.
+    \Disclaimer!!  <Developer> makes only the guarantees in {Guarantees} about the <Project>.  With the exception of those guarantees, the only terms between <Developer> and <Sponsor> about rights to the <Project> will be those of the <New Permissive License>.
 
     \Limited Damages!!  If <Sponsor> takes <Legal Action> against <Developer> related to the this agreement, under contract law, tort law, or any other kind of law, <Sponsor>'s damages from <Developer> will be capped at the amount of the <Payment> that <Sponsor> paid <Developer>.
 
