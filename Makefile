@@ -1,8 +1,9 @@
-CF=node_modules/.bin/commonform
-CFT=node_modules/.bin/cftemplate
-SPELL=node_modules/.bin/reviewers-edition-spell
-OUTPUT=build
-PROJECT_OUTPUT=$(OUTPUT)/projects
+CFCM=node_modules/.bin/commonform-commonmark
+CFDOCX=node_modules/.bin/commonform-docx
+CRITIQUE=node_modules/.bin/commonform-critique
+LINT=node_modules/.bin/commonform-lint
+TOOLS=$(CFCM) $(CFDOCX) $(CRITIQUE) $(LINT)
+
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
 EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
 ifeq ($(EDITION),development draft)
@@ -10,41 +11,34 @@ ifeq ($(EDITION),development draft)
 else
 	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
 endif
+EDITION_FLAG=--edition "$(EDITION)"
 
-FORMS=$(basename $(wildcard *.cform))
-DOCX=$(addprefix $(OUTPUT)/,$(addsuffix .docx,$(FORMS) $(PROJECTS)))
-PDF=$(addprefix $(OUTPUT)/,$(addsuffix .pdf,$(FORMS) $(PROJECTS)))
-MD=$(addprefix $(OUTPUT)/,$(addsuffix .md,$(FORMS) $(PROJECTS)))
-JSON=$(addprefix $(OUTPUT)/,$(addsuffix .json,$(FORMS) $(PROJECTS)))
+BUILD=build
+BASENAMES=relicense-agreement
+JSON=$(BUILD)/relicense-agreement.form.json
 
-TARGETS=$(DOCX) $(PDF) $(MD) $(JSON)
+all: docx pdf
 
-all: $(TARGETS)
+docx: $(BUILD)/relicense-agreement.docx
+pdf: $(BUILD)/relicense-agreement.pdf
 
-$(OUTPUT):
-	mkdir -p $@
+$(BUILD)/%.docx: $(BUILD)/%.form.json $(BUILD)/%.directions.json %.title blanks.json styles.json | $(CFDOCX) $(BUILD)
+	$(CFDOCX) --title "$(shell cat $*.title)" --edition "$(EDITION)" --number outline --indent-margins --left-align-title --values blanks.json --directions $(BUILD)/$*.directions.json --styles styles.json $< > $@
 
-$(OUTPUT)/%.md: %.form %.options blanks.json | $(CF) $(OUTPUT)
-	$(CF) render --format markdown $(shell cat $*.options) --blanks blanks.json < $< > $@
+$(BUILD)/%.form.json: %.md | $(BUILD) $(CFCM)
+	$(CFCM) parse --only form < $< > $@
 
-$(OUTPUT)/%.docx: %.form %.options blanks.json styles.json | $(CF) $(OUTPUT)
-	$(CF) render --format docx $(shell cat $*.options) --edition "$(SPELLED_EDITION)" --blanks blanks.json --styles styles.json < $< > $@
-
-$(OUTPUT)/%.json: %.form | $(CF) $(OUTPUT)
-	$(CF) render --format native < $< > $@
-
-%.form: %.cform
-ifeq ($(EDITION),Development Draft)
-	cat $< | sed "s!PUBLICATION!a development draft of the License Zero Relicense Agreement!" > $@
-else
-	cat $< | sed "s!PUBLICATION!the $(SPELLED_EDITION) of the License Zero Relicense Agreement!" > $@
-endif
+$(BUILD)/%.directions.json: %.md | $(BUILD) $(CFCM)
+	$(CFCM) parse --only directions < $< > $@
 
 %.pdf: %.docx
-	doc2pdf $<
+	unoconv $<
 
-$(CF):
-	npm install
+$(BUILD):
+	mkdir -p $@
+
+$(TOOLS):
+	npm ci
 
 .PHONY: clean docker lint critique
 
