@@ -14,13 +14,13 @@ endif
 EDITION_FLAG=--edition "$(EDITION)"
 
 BUILD=build
-BASENAMES=relicense-agreement
-JSON=$(BUILD)/relicense-agreement.form.json
+BASENAMES=terms
+JSON=$(BUILD)/terms.form.json
 
 all: docx pdf
 
-docx: $(BUILD)/relicense-agreement.docx
-pdf: $(BUILD)/relicense-agreement.pdf
+docx: $(BUILD)/terms.docx
+pdf: $(BUILD)/terms.pdf
 
 $(BUILD)/%.docx: $(BUILD)/%.form.json $(BUILD)/%.directions.json %.title blanks.json styles.json | $(CFDOCX) $(BUILD)
 	$(CFDOCX) --title "$(shell cat $*.title)" --edition "$(EDITION)" --number outline --indent-margins --left-align-title --values blanks.json --directions $(BUILD)/$*.directions.json --styles styles.json $< > $@
