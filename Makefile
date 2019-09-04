@@ -49,10 +49,10 @@ critique: $(JSON) | $(CF)
 	for form in $(JSON); do echo $$form ; $(CF) critique < $$form; done
 
 clean:
-	rm -rf $(OUTPUT)
+	rm -rf $(BUILD)
 
 docker:
 	docker build -t licensezero-relicense-agreement .
 	docker run --name licensezero-relicense-agreement licensezero-relicense-agreement
-	docker cp licensezero-relicense-agreement:/workdir/$(OUTPUT) .
+	docker cp licensezero-relicense-agreement:/workdir/$(BUILD) .
 	docker rm licensezero-relicense-agreement
