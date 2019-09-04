@@ -12,7 +12,7 @@ Effective `Date`, _Sponsor_ and _Developer_ agree:
 
 - **Developer's Contributions** are the contributions _Developer_ has made to the _Project_ with the project identifier `Project ID` in package metadata.
 
-- The **Permissive License** is the version of the License Zero Permissive Public License currently published at `Open Source License Website`.
+- The **Permissive License** is the version of the `Permissive License` currently published at `Permissive License Website`.
 
 - The **Payment** is `Payment` United States Dollars.
 
