@@ -5,18 +5,13 @@ LINT=node_modules/.bin/commonform-lint
 SPELL=node_modules/.bin/reviewers-edition-spell
 TOOLS=$(CFCM) $(CFDOCX) $(CRITIQUE) $(LINT) $(SPELL)
 
-GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
-EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
-ifeq ($(EDITION),Development Draft)
-	SPELLED_EDITION=$(EDITION)
-else
-	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
-endif
-EDITION_FLAG=--edition "$(EDITION)"
-
 BUILD=build
 BASENAMES=terms
 JSON=$(BUILD)/terms.form.json
+
+GIT_TAG=$(shell (git diff-index --quiet HEAD && git describe --exact-match --tags 2>/dev/null | sed 's/v//'))
+EDITION:=$(or $(EDITION),$(if $(GIT_TAG),$(GIT_TAG),Internal Draft))
+EDITION_FLAG=--edition "$(EDITION)"
 
 all: docx pdf
 
