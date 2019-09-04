@@ -2,11 +2,12 @@ CFCM=node_modules/.bin/commonform-commonmark
 CFDOCX=node_modules/.bin/commonform-docx
 CRITIQUE=node_modules/.bin/commonform-critique
 LINT=node_modules/.bin/commonform-lint
-TOOLS=$(CFCM) $(CFDOCX) $(CRITIQUE) $(LINT)
+SPELL=node_modules/.bin/reviewers-edition-spell
+TOOLS=$(CFCM) $(CFDOCX) $(CRITIQUE) $(LINT) $(SPELL)
 
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
 EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
-ifeq ($(EDITION),development draft)
+ifeq ($(EDITION),Development Draft)
 	SPELLED_EDITION=$(EDITION)
 else
 	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
